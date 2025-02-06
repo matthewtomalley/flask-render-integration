@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Iris - Model prediction</title>
+    <title>Linnerud - Model prediction</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -44,15 +44,14 @@
     <h2>Introduce the values</h2>
     
     <form action="/" method="post">
-        Petal width: <input type="number" step="any" name="val1" required><br><br>
-        Petal length: <input type="number" step="any" name="val2" required><br><br>
-        Sepal width: <input type="number" step="any" name="val3" required><br><br>
-        Sepal length: <input type="number" step="any" name="val4" required><br><br>
-        <input type="submit" value="Predict">
+        Weight: <input type="number" step="any" name="val1" required><br><br>
+        Waist: <input type="number" step="any" name="val2" required><br><br>
+        Pulse: <input type="number" step="any" name="val3" required><br><br>
+        <input type="submit" value="How many situps?">
     </form>
     
     {% if prediction != None %}
-        <h3>Prediction: {{ prediction }}</h3>
+        <h3>Do this many situps: {{ prediction }}</h3>
     {% endif %}
 </body>
 </html>
