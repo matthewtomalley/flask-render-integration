@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Linnerud - Model prediction</title>
+    <title>Linnerud - Situps</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -41,7 +41,7 @@
     </style>
 </head>
 <body>
-    <h2>Introduce the values</h2>
+    <h2>Inputs:</h2>
     
     <form action="/" method="post">
         Weight: <input type="number" step="any" name="val1" required><br><br>
@@ -51,7 +51,7 @@
     </form>
     
     {% if prediction != None %}
-        <h3>Do this many situps: {{ prediction }}</h3>
+        <h3>Number of situps: {{ prediction }}</h3>
     {% endif %}
 </body>
 </html>
