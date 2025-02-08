@@ -2,7 +2,7 @@ from flask import Flask, request, render_template
 from pickle import load
 
 app = Flask(__name__)
-model = load(open("../models/linnerud_situps.sav", "rb"))
+model = load(open("../linnerud_situps.sav", "rb"))
 
 @app.route("/", methods = ["GET", "POST"])
 def index():
